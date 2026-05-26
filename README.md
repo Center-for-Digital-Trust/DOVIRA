@@ -9,7 +9,7 @@ Public organizations and NGOs handle highly sensitive citizen data. Sending raw 
 ## The Solution: Zero-Data Retention & Sovereign AI Infrastructure
 DOVIRA acts as a local security and data engineering architecture that intercepts text inputs directly on the user's machine:
 1. **Local Masking:** Before data leaves the device, DOVIRA detects sensitive entities (emails, phone numbers, document IDs) and replaces them with anonymous tokens.
-2. **Safe Cloud Transmission:** The sanitized text is transmitted to the cloud AI for processing via layers like Nudge MD™.
+2. **Safe Cloud Transmission:** The sanitized text is transmitted to the cloud AI for processing via layers like MIRACLE DROPLET MD™.
 3. **Local Re-Assembly:** Once the AI returns the response, DOVIRA locally maps the tokens back to the original values. 
 
 *Sensitive data never leaves the client's local secure environment.*
@@ -21,7 +21,7 @@ DOVIRA acts as a local security and data engineering architecture that intercept
 * **Deterministic Performance:** Powered by optimized, strict regular expressions (RegEx) ensuring 0ms latency impact on daily operational workflows.
 
 ## Institutional Context
-Developed and maintained by **Center for Digital Trust (ГО "Центр цифрової довіри")**, Ukraine.
+Developed and maintained by TM MIRACLE DROPLET MD Canada 
 
 ## License
 Distributed under the GNU General Public License v3.0 (GPLv3).

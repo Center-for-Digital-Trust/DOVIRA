@@ -1,25 +1,25 @@
-# Сценарии практического применения ядра DOVIRA
+# Practical Application Scenarios for the DOVIRA Core
 
-Документ описывает ключевые направления внедрения деперсонализационного ядра DOVIRA в государственном, общественном и частном секторах.
+This document describes key areas for implementing the DOVIRA depersonalization core in the government, public, and private sectors.
 
-## 1. Пилотный проект: Интеграция в работу ЦНАП (Центров предоставления админуслуг)
-При обработке обращений граждан операторы местных ЦНАП (включая пилотную зону в г. Каменское) регулярно используют аналитические возможности ИИ для структурирования запросов, подготовки ответов и юридического анализа.
+## 1. Pilot Project: Integration into Administrative Service Centers (ASCs)
+When processing citizen requests, operators at local Administrative Service Centers (including the pilot zone in Kamenskoye) regularly use AI analytics to structure requests, prepare responses, and perform legal analysis.
 
-**Схема работы DOVIRA:**
-* Оператор вставляет текст жалобы/заявления, содержащий паспортные данные, телефоны и адреса заявителей.
-* DOVIRA мгновенно "на лету" заменяет эти данные анонимными токенами прямо в браузере или на локальном компьютере оператора.
-* В облачную модель ИИ отправляется полностью безопасный текст. Облако обрабатывает запрос в режиме Zero-Data Retention (без сохранения истории).
-* Ответ ИИ демаскируется локально, возвращая оператору документ с реальными данными гражданина. Риск утечки ПДн в зарубежные облака равен нулю.
+**DOVIRA Operation Scheme:**
+* The operator inserts the text of the complaint/application, containing the applicants' passport information, phone numbers, and addresses.
+* DOVIRA instantly replaces this data with anonymous tokens on the fly, directly in the browser or on the operator's local computer.
+* Completely secure text is sent to the AI ​​cloud model. The cloud processes the request in Zero-Data Retention mode (without saving history).
+* The AI ​​response is demasked locally, returning the document with the citizen's real data to the operator. The risk of personal data leakage to foreign clouds is zero.
 
-## 2. Учет индивидуальной работы сотрудников (Individual Work Accounting)
-Фреймворк локального логирования позволяет организациям вести аудит использования ИИ:
-* Оценка эффективности работы каждого сотрудника с промптами.
-* Формирование внутренней библиотеки лучших операционных практик без накопления конфиденциального контента.
+## 2. Individual Work Accounting
+A local logging framework allows organizations to audit their AI use:
+* Evaluate the performance of each employee with prompts.
+* Build an internal library of operational best practices without accumulating confidential content.
 
-## 3. Безопасное создание суверенных датасетов (Sovereign AI Training)
-Каждая очищенная операция сохраняется в локальный JSON-реестр. 
-* Организация накапливает ценную базу знаний (prompt-response pairs).
-* Данный датасет очищен от PII по стандартам GDPR, что позволяет легально использовать его для будущего дообучения (Fine-Tuning) локальных open-source моделей ИИ.
+## 3. Secure creation of sovereign datasets (Sovereign AI Training)
+Each cleared operation is saved to a local JSON registry.
+* The organization accumulates a valuable knowledge base (prompt-response pairs).
+* This dataset is cleared of personal information in accordance with GDPR standards, allowing it to be legally used for future fine-tuning of local open-source AI models.
 
 ---
-**Разработчики и партнеры:** ГО "Центр цифрової довіри" (Украина) & TM MIRACLE DROPLET MD Canada.
+**Developers and partners:** GO "Center for Digital Trust" (Ukraine) & TM MIRACLE DROPLET MD Canada.
